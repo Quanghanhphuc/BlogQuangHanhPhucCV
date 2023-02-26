@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thêm Sản Phẩm</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="" />
+    <script src="hotro.js"></script>
+    <script src="sanPham.js"></script>
+  </head>
+  <body>
+    <div class="them-moi-san-pham">
+      <label for="hinhAnh">Hình Ảnh Sản Phẩm</label>
+      <input type="text" id="hinhAnh" />
+
+      <label for="ten">Tên Sản Phẩm</label>
+      <input type="text" id="ten" />
+
+      <label for="giaGoc">Giá Gốc</label>
+      <input type="number" id="giaGoc" />
+
+      <label for="phanTramGiamGia">Giảm Giá %</label>
+      <input type="number" id="phanTramGiamGia" />
+
+      <label for="khuVuc">Khu Vực</label>
+      <input type="text" id="khuVuc" />
+
+      <label for="moTa">Nội dung mô tả sản phẩm</label>
+      <textarea id="moTa" cols="35" rows="10"></textarea>
+
+      <!-- <label for="tenMay">tên số hiệu máy</label>
+      <input type="text" id="tenMay" /> -->
+
+      <label for="soGB">dung lượng máy và giá tiền</label>
+      <input type="text" id="soGB" />
+
+      <label for="giaTheoDungLuong">giá theo dung lượng</label>
+      <input type="text" id="giaTheoDungLuong" />
+
+      <label for="giaTheoMau">Giá theo màu</label>
+      <input type="text" id="giaTheoMau" />
+
+      <label for="tinhTrangDonHang">Tình Trạng đơn hàng</label>
+      <input type="text" id="tinhTrangDonHang" />
+
+      <label for="congNgheManHinh">Công nghệ màn hình</label>
+      <input type="text" id="congNgheManHinh" />
+
+      <label for="doPhanGiai">Độ Phân giải</label>
+      <input type="text" id="doPhanGiai" />
+
+      <label for="manHinhRong">Màn hình rộng</label>
+      <input type="text" id="manHinhRong" />
+
+      <label for="matKinhCamUng">Mặt kính cảm ứng</label>
+      <input type="text" id="matKinhCamUng" />
+
+      <label for="camMeraSau">Cammera sau</label>
+      <input type="text" id="camMeraSau" />
+
+      <label for="quayPhim">Quay Phim</label>
+      <input type="text" id="quayPhim" />
+
+      <label for="denFlash">đèn Flash</label>
+      <input type="text" id="denFlash" />
+
+      <label for="chupAnhNangCao">Chụp ảnh nâng cao</label>
+      <input type="text" id="chupAnhNangCao" />
+
+      <label for="camMeraTruoc">Cammera Trước</label>
+      <input type="text" id="camMeraTruoc" />
+
+      <label for="videoCall">Video Call</label>
+      <input type="text" id="videoCall" />
+
+      <label for="thongTinKhac">Thông Tin Khác</label>
+      <input type="text" id="thongTinKhac" />
+
+      <label for="heDieuHanh">Hệ điều hành</label>
+      <input type="text" id="heDieuHanh" />
+
+      <label for="chipSet">Chip Set(hãng sản xuất CPU)</label>
+      <input type="text" id="chipSet" />
+
+      <label for="chipDoHoa">Chip đồ họa</label>
+      <input type="text" id="chipDoHoa" />
+
+      <label for="ram">Ram</label>
+      <input type="text" id="ram" />
+
+      <label for="boNhoTrong">Bộ nhớ trong</label>
+      <input type="text" id="boNhoTrong" />
+
+      <label for="theNhoNgoai">Thẻ Nhớ Ngoài</label>
+      <input type="text" id="theNhoNgoai" />
+
+      <label for="mangDiDong">Mạng di động</label>
+      <input type="text" id="mangDiDong" />
+
+      <label for="sim">SIM</label>
+      <input type="text" id="sim" />
+
+      <label for="wifi">Wifi</label>
+      <input type="text" id="wifi" />
+
+      <label for="gps">GPS</label>
+      <input type="text" id="gps" />
+
+      <label for="bluetooth">Bluetooth</label>
+      <input type="text" id="bluetooth" />
+
+      <label for="congKetNoi">Cổng kết nối sạc</label>
+      <input type="text" id="congKetNoi" />
+
+      <label for="jack">Jack tai nghe</label>
+      <input type="text" id="jack" />
+
+      <label for="ketNoiKhac">Kết nối khác</label>
+      <input type="text" id="ketNoiKhac" />
+
+      <label for="thietKe">Thiết kế</label>
+      <input type="text" id="thietKe" />
+
+      <label for="chatLieu">Chất liệu</label>
+      <input type="text" id="chatLieu" />
+
+      <label for="kichThuoc">kichThuoc</label>
+      <input type="text" id="kichThuoc" />
+
+      <label for="trongLuong">Trọng Lượng</label>
+      <input type="text" id="trongLuong" />
+
+      <label for="dungLuongPin">Dung lượng pin</label>
+      <input type="text" id="dungLuongPin" />
+
+      <label for="loaiPin">Loại pin</label>
+      <input type="text" id="loaiPin" />
+
+      <label for="congNghePin">Công nghệ Pin</label>
+      <input type="text" id="congNghePin" />
+
+      <label for="baoMatNangCao">Bảo mật nâng cao</label>
+      <input type="text" id="baoMatNangCao" />
+
+      <label for="thoiDiemRaMat">Thoi Điểm ra mắt</label>
+      <input type="text" id="thoiDiemRaMat" />
+
+      <button onclick="onClickTaoSanPham()">Tạo Sản Phẩm</button>
+
+      <!-- <label for="hinhAnh">Hình Ảnh Sản Phâm</label>
+      <input type="text" id="hinhAnh"> -->
+    </div>
+    <script>
+      var danhSachSanPham = JSON.parse(localStorage.getItem("danhSachSanPham"));
+      if (danhSachSanPham == null) {
+        danhSachSanPham = new Array();
+      }
+      // console.log(danhSachSanPham);
+
+      function onClickTaoSanPham() {
+        // console.log("goi ham");
+
+        nodeHinhAnh = document.getElementById("hinhAnh");
+        var hinhAnh = nodeHinhAnh.value;
+
+        nodeTen = document.getElementById("ten");
+        var ten = nodeTen.value;
+
+        nodeGiaGoc = document.getElementById("giaGoc");
+        var giaGoc = parseInt(nodeGiaGoc.value);
+
+        nodePhanTramGiamGia = document.getElementById("phanTramGiamGia");
+        var phanTramGiamGia = parseFloat(nodePhanTramGiamGia.value);
+
+        nodekhuVuc = document.getElementById("khuVuc");
+        var khuVuc = nodekhuVuc.value;
+
+        nodemoTa = document.getElementById("moTa");
+        var moTa = nodemoTa.value;
+
+        // nodetenMay = document.getElementById("tenMay");
+        // var tenMay = nodetenMay.value;
+
+        nodesoGB = document.getElementById("soGB");
+        var soGB = nodesoGB.value;
+
+        nodegiaTheoDungLuong = document.getElementById("giaTheoDungLuong");
+        var giaTheoDungLuong = nodegiaTheoDungLuong.value;
+
+        nodegiaTheoMau = document.getElementById("giaTheoMau");
+        var giaTheoMau = nodegiaTheoMau.value;
+
+        nodetinhTrangDonHang = document.getElementById("tinhTrangDonHang");
+        var tinhTrangDonHang = nodetinhTrangDonHang.value;
+
+        nodecongNgheManHinh = document.getElementById("congNgheManHinh");
+        var congNgheManHinh = nodecongNgheManHinh.value;
+
+        nodedoPhanGiai = document.getElementById("doPhanGiai");
+        var doPhanGiai = nodedoPhanGiai.value;
+
+        nodemanHinhRong = document.getElementById("manHinhRong");
+        var manHinhRong = nodemanHinhRong.value;
+
+        nodematKinhCamUng = document.getElementById("matKinhCamUng");
+        var matKinhCamUng = nodematKinhCamUng.value;
+
+        nodecamMeraSau = document.getElementById("camMeraSau");
+        var camMeraSau = nodecamMeraSau.value;
+
+        nodequayPhim = document.getElementById("quayPhim");
+        var quayPhim = nodequayPhim.value;
+
+        nodedenFlash = document.getElementById("denFlash");
+        var denFlash = nodedenFlash.value;
+
+        nodechupAnhNangCao = document.getElementById("chupAnhNangCao");
+        var chupAnhNangCao = nodechupAnhNangCao.value;
+
+        nodecamMeraTruoc = document.getElementById("camMeraTruoc");
+        var camMeraTruoc = nodecamMeraTruoc.value;
+
+        nodevideoCall = document.getElementById("videoCall");
+        var videoCall = nodevideoCall.value;
+
+        nodethongTinKhac = document.getElementById("thongTinKhac");
+        var thongTinKhac = nodethongTinKhac.value;
+
+        nodeheDieuHanh = document.getElementById("heDieuHanh");
+        var heDieuHanh = nodeheDieuHanh.value;
+
+        nodechipSet = document.getElementById("chipSet");
+        var chipSet = nodechipSet.value;
+
+        nodechipDoHoa = document.getElementById("chipDoHoa");
+        var chipDoHoa = nodechipDoHoa.value;
+
+        noderam = document.getElementById("ram");
+        var ram = noderam.value;
+
+        nodeboNhoTrong = document.getElementById("boNhoTrong");
+        var boNhoTrong = nodeboNhoTrong.value;
+
+        nodetheNhoNgoai = document.getElementById("theNhoNgoai");
+        var theNhoNgoai = nodetheNhoNgoai.value;
+
+        nodemangDiDong = document.getElementById("mangDiDong");
+        var mangDiDong = nodemangDiDong.value;
+
+        nodesim = document.getElementById("sim");
+        var sim = nodesim.value;
+
+        nodewifi = document.getElementById("wifi");
+        var wifi = nodewifi.value;
+
+        nodegps = document.getElementById("gps");
+        var gps = nodegps.value;
+
+        nodebluetooth = document.getElementById("bluetooth");
+        var bluetooth = nodebluetooth.value;
+
+        nodecongKetNoi = document.getElementById("congKetNoi");
+        var congKetNoi = nodecongKetNoi.value;
+
+        nodejack = document.getElementById("jack");
+        var jack = nodejack.value;
+
+        nodeketNoiKhac = document.getElementById("ketNoiKhac");
+        var ketNoiKhac = nodeketNoiKhac.value;
+
+        nodethietKe = document.getElementById("thietKe");
+        var thietKe = nodethietKe.value;
+
+        nodechatLieu = document.getElementById("chatLieu");
+        var chatLieu = nodechatLieu.value;
+
+        nodekichThuoc = document.getElementById("kichThuoc");
+        var kichThuoc = nodekichThuoc.value;
+
+        nodetrongLuong = document.getElementById("trongLuong");
+        var trongLuong = nodetrongLuong.value;
+
+        nodedungLuongPin = document.getElementById("dungLuongPin");
+        var dungLuongPin = nodedungLuongPin.value;
+
+        nodeloaiPin = document.getElementById("loaiPin");
+        var loaiPin = nodeloaiPin.value;
+
+        nodecongNghePin = document.getElementById("congNghePin");
+        var congNghePin = nodecongNghePin.value;
+
+        nodebaoMatNangCao = document.getElementById("baoMatNangCao");
+        var baoMatNangCao = nodebaoMatNangCao.value;
+
+        nodethoiDiemRaMat = document.getElementById("thoiDiemRaMat");
+        var thoiDiemRaMat = nodethoiDiemRaMat.value;
+
+        var sanPham = TaoDoiTuongSanPham(
+          hinhAnh,
+          ten,
+          giaGoc,
+          phanTramGiamGia,
+          khuVuc,
+          moTa,
+          soGB,
+          dungLuongPin,
+          giaTheoMau,
+          tinhTrangDonHang,
+          congNgheManHinh,
+          doPhanGiai,
+          manHinhRong,
+          matKinhCamUng,
+          camMeraSau,
+          quayPhim,
+          denFlash,
+          chupAnhNangCao,
+          camMeraTruoc,
+          videoCall,
+          thongTinKhac,
+          heDieuHanh,
+          chipSet,
+          chipDoHoa,
+          ram,
+          boNhoTrong,
+          theNhoNgoai,
+          mangDiDong,
+          sim,
+          wifi,
+          gps,
+          bluetooth,
+          congKetNoi,
+          jack,
+          ketNoiKhac,
+          thietKe,
+          chatLieu,
+          kichThuoc,
+          trongLuong,
+          dungLuongPin,
+          loaiPin,
+          congNghePin,
+          baoMatNangCao,
+          thoiDiemRaMat,
+          null
+        );
+
+        danhSachSanPham.push(sanPham);
+        var jsonDanhSachSP = JSON.stringify(danhSachSanPham);
+        localStorage.setItem("danhSachSanPham", jsonDanhSachSP);
+      }
+    </script>
+  </body>
+</html>

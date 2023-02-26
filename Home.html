@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="./css/home.css" />
+    <script src="hotro.js"></script>
+    <script src="sanPham.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <!-- headding -->
+      <nav class="headding"></nav>
+
+      <!-- hiện thị sản phẩm -->
+      <section id="products">
+        <div class="items">
+          <div class="item">
+            <a href="productdetails.html">
+              <div class="item-thums">
+                <img
+                  src="https://lesang.vn/hinh-anh-le-sang/images/iphone-5-hinh-anh-chinh-thuc-3.jpg"
+                  alt=""
+                />
+              </div>
+              <h2 class="item-title">I Phone 11</h2>
+              <div class="item-price price">
+                <span class="item-origin">5000000</span>
+                <span class="item-price-sale">48000000</span>
+              </div>
+              <div class="buyMoreCart">
+                <button class="buy">Mua</button>
+                <button class="btn primary">Thêm vào giỏ hàng</button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="menu"></footer>
+    </div>
+
+    <script>
+      // slider
+
+      var jsonDanhSachSP = localStorage.getItem("danhSachSanPham");
+      var danhSachSanPham = JSON.parse(jsonDanhSachSP);
+      console.log("danh sách sản phẩm là:" + danhSachSanPham);
+      // chuyển danh sách đối tượng sang HTML
+      var HTML = chuyenDanhSachSPSangHTML(danhSachSanPham);
+
+      // gán HTML vào Selection grid
+      var nodeProducts = document.getElementById("products");
+      nodeProducts.innerHTML = HTML;
+    </script>
+  </body>
+</html>
